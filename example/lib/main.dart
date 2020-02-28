@@ -113,28 +113,28 @@ class SignaturePadExampleState extends State<SignaturePadExample> {
   Future _handleSavePng() async {
     var result = await _padController.toPng();
     Navigator.of(context).push(
-          new MaterialPageRoute(
-            builder: (BuildContext context) {
-              return new Scaffold(
-                appBar: new AppBar(
-                  backgroundColor: Colors.grey[700],
+      new MaterialPageRoute(
+        builder: (BuildContext context) {
+          return new Scaffold(
+            appBar: new AppBar(
+              backgroundColor: Colors.grey[700],
+            ),
+            backgroundColor: Colors.grey[300],
+            body: new Center(
+              child: new Container(
+                decoration: new BoxDecoration(
+                  border: new Border.all(),
+                  color: Colors.white,
                 ),
-                backgroundColor: Colors.grey[300],
-                body: new Center(
-                  child: new Container(
-                    decoration: new BoxDecoration(
-                      border: new Border.all(),
-                      color: Colors.white,
-                    ),
-                    padding: new EdgeInsets.all(4.0),
-                    margin: new EdgeInsets.all(4.0),
-                    child: new Image.memory(result),
-                  ),
-                ),
-              );
-            },
-            fullscreenDialog: true,
-          ),
-        );
+                padding: new EdgeInsets.all(4.0),
+                margin: new EdgeInsets.all(4.0),
+                child: new Image.memory(result),
+              ),
+            ),
+          );
+        },
+        fullscreenDialog: true,
+      ),
+    );
   }
 }

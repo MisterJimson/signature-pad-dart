@@ -151,9 +151,8 @@ abstract class SignaturePadBase {
     var startPoint = curve.startPoint;
     var endPoint = curve.endPoint;
 
-    var velocity =
-        (velocityFilterWeight * endPoint.velocityFrom(startPoint)) +
-            ((1 - velocityFilterWeight) * _lastVelocity);
+    var velocity = (velocityFilterWeight * endPoint.velocityFrom(startPoint)) +
+        ((1 - velocityFilterWeight) * _lastVelocity);
 
     var newWidth = _strokeWidth(velocity);
 
