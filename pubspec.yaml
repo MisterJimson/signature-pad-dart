@@ -1,12 +1,17 @@
-name: signature_pad
-author: John Ryan <john.p.ryan4@gmail.com>
-description: A flutter and HTML 5 canvas signature library
-version: 2.1.0
-homepage: https://github.com/johnpryan/signature-pad-dart
+name: signature_pad_widget
+description: Flutter widget for allowing the user to sign their name
+version: 2.0.0
+homepage: https://github.com/MisterJimson/signature-pad-dart
+
 dependencies:
-  stream_transform: ^0.0.9
+  stream_transform: ^1.2.0
+  flutter:
+    sdk: flutter
+
 dev_dependencies:
-  build_runner: any
-  build_web_compilers: any
+  pedantic: ^1.8.0+1
+
 environment:
-  sdk: '>=1.24.3 <3.0.0'
+  sdk: '>=2.3.0 <3.0.0'
+
+flutter:

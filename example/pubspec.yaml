@@ -1,0 +1,11 @@
+name: example
+description: signature_pad example
+
+dependencies:
+  flutter:
+    sdk: flutter
+  signature_pad_widget:
+    path: ../
+
+flutter:
+  uses-material-design: true
