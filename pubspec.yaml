@@ -1,6 +1,6 @@
 name: signature_pad_widget
 description: Flutter widget for allowing the user to sign their name and get the result as an image
-version: 2.0.0
+version: 2.0.1
 homepage: https://github.com/MisterJimson/signature_pad_widget
 
 dependencies:
